@@ -134,11 +134,7 @@ You have two options for installing the project: cloning the repository or downl
    php artisan migrate
    ```
 
-3. **Run Seeders (Optional)**
-   Populate the database with sample data (if you have seeders):
-   ```bash
-   php artisan db:seed
-   ```
+
 
 ## 🚀 Running the Application
 
