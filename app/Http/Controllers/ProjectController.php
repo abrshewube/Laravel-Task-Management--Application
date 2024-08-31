@@ -19,8 +19,15 @@ class ProjectController extends Controller
 
     public function store(Request $request)
     {
+        // Validate the request
+        $request->validate([
+            'name' => 'required|string|max:255',
+        ]);
+
+        // Create the project
         Project::create($request->only('name'));
-        return redirect()->route('projects.index');
+
+        return redirect()->route('projects.index')->with('success', 'Project created successfully!');
     }
 
     public function edit(Project $project)
@@ -30,13 +37,20 @@ class ProjectController extends Controller
 
     public function update(Request $request, Project $project)
     {
+        // Validate the request
+        $request->validate([
+            'name' => 'required|string|max:255',
+        ]);
+
+        // Update the project
         $project->update($request->only('name'));
-        return redirect()->route('projects.index');
+
+        return redirect()->route('projects.index')->with('success', 'Project updated successfully!');
     }
 
     public function destroy(Project $project)
     {
         $project->delete();
-        return redirect()->route('projects.index');
+        return redirect()->route('projects.index')->with('success', 'Project deleted successfully!');
     }
 }
