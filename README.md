@@ -5,6 +5,7 @@ A simple task management application built with Laravel. This application allows
 ## 📑 Table of Contents
 
 - [Features](#-features)
+- [Screenshots](#-screenshots)
 - [Prerequisites](#-prerequisites)
 - [Installation](#-installation)
   - [Option 1: Cloning the Repository](#option-1-cloning-the-repository)
@@ -21,6 +22,30 @@ A simple task management application built with Laravel. This application allows
 - 🏷️ Assign tasks to specific projects
 - 🔍 Filter tasks by project
 - 📱 Responsive and user-friendly UI
+
+## 📸 Screenshots
+
+Here are some screenshots of the application in action:
+
+### Projects Overview
+![Projects Overview](./screenshots/sc1.PNG)
+
+### Tasks List
+![Tasks List](./screenshots/sc3.PNG)
+
+### Create Project
+![Create Project](./screenshots/sc2.PNG)
+
+### Edit Project
+![Edit Project](./screenshots/edit-project.jpg)
+
+### Create Task
+![Create Task](./screenshots/sc4.jpg)
+
+### Edit Task
+![Edit Task](./screenshots/sc5.jpg)
+
+a
 
 ## 🛠️ Prerequisites
 
@@ -56,8 +81,7 @@ You have two options for installing the project: cloning the repository or downl
 ### Option 2: Downloading the Zip File
 
 1. **Download the Zip File**
-   
-
+  
 2. **Extract the Zip File**
    Extract the downloaded zip file to your desired location.
 
@@ -83,7 +107,7 @@ You have two options for installing the project: cloning the repository or downl
    php artisan key:generate
    ```
 
-2. **Configure Environment Variables**
+3. **Configure Environment Variables**
    Update the following in your `.env` file:
    ```plaintext
    APP_NAME=TaskManager
@@ -110,6 +134,11 @@ You have two options for installing the project: cloning the repository or downl
    php artisan migrate
    ```
 
+3. **Run Seeders (Optional)**
+   Populate the database with sample data (if you have seeders):
+   ```bash
+   php artisan db:seed
+   ```
 
 ## 🚀 Running the Application
 
